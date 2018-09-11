@@ -4,8 +4,9 @@ const player1Btn = document.querySelector('.player-1-btn')
 const player2Btn = document.querySelector('.player-2')
 const player1Display = document.querySelector('.player-1-score')
 
-let score1 = 0;
+let p1Score = 0;
 
 player1Btn.addEventListener('click', function () {
-  player1Display.textContent = 0;
+  p1Score++;
+  player1Display.textContent = p1Score;
 });
