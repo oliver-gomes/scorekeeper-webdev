@@ -15,8 +15,10 @@ player1Btn.addEventListener('click', function () {
     p1Score++;
     if (p1Score === winningScore) {
       gameOver = true;
+      player1Display.classList.add('winner');
     }
     player1Display.textContent = p1Score;
+
   }
 });
 
